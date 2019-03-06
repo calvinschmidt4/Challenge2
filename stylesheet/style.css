@@ -2,18 +2,37 @@ body {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    font-size: 18px;
+    font-size: 66px;
     display: flex;
     height: 100%;
     width: 100%;
+    color: white;
 }
 
-.clock {   
-    margin: auto;
-    
+.container {
+    left: 0;
+    height: 200px;
+    margin-top: -100px;    
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
 }
 
-span{
-    font-size: 70px;    
+.clock {        
+    margin: auto;    
 }
 
+
+
+.night {
+    background-image: url("../images/night.jpg");
+}
+
+.sunset {
+    background-image: url("../images/sunset.jpg");
+}
+
+.day {
+    background-image: url("../images/day.jpg");
+}
