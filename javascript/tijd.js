@@ -6,6 +6,7 @@ function init(){
     m=d.getMinutes();
     s=d.getSeconds();
     clock();
+    background();
 };
 
 function clock(){;
@@ -16,7 +17,7 @@ function clock(){;
         if(m==60){
             m=0;
             h++;
-            if(h=24){
+            if(h==24){
                 h=0;
             }
         }    
@@ -33,21 +34,15 @@ function $(id, val){
     document.getElementById(id).innerHTML=val;
 };
 
-
-function change(){
-    if(h=24){
-        document.getElementsByClassName(dark);
-            Element.classList.add('')
+function background(){
+    if(h > 19 || h < 6){
+        document.body.className = "night";
+    } else if (h > 16 && h < 19){
+        document.body.className = "sunset";
+    } else {
+        document.body.className = "day";
     }
-}
-
-
-
-
-
-
-
-
+};
 
 
 window.onload=init;
