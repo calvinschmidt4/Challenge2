@@ -11,12 +11,13 @@ body {
 
 .container {
     left: 0;
-    height: 200px;
-    margin-top: -100px;    
+    height: 100px;
+    margin-top: -50px;    
     position: absolute;
     top: 50%;
     width: 100%;
     display: flex;
+    background-color: rgba(0, 0, 0, 0.75);
 }
 
 .clock {        
@@ -26,7 +27,13 @@ body {
 
 
 .night {
-    background-image: url("../images/night.jpg");
+    background: url("../images/night.jpg") fixed center no-repeat;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+
+
 }
 
 .sunset {
@@ -34,5 +41,11 @@ body {
 }
 
 .day {
-    background-image: url("../images/day.jpg");
+    background: url("../images/day.jpg") fixed center no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    font-size: 20px;
+    color: white;
 }
