@@ -1,26 +1,27 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: sarpanch;
     font-size: 66px;
     display: flex;
     height: 100%;
     width: 100%;
     color: white;
+   
 }
 
 .container {
-    left: 0;
     height: 100px;
-    margin-top: -50px;    
+    bottom: 0;
     position: absolute;
-    top: 50%;
+    margin: auto;
     width: 100%;
     display: flex;
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: #834013;
+    border-top: 10px solid green;
 }
 
-.clock {        
+#clock {        
     margin: auto;    
 }
 
@@ -31,21 +32,31 @@ body {
     background-size: cover;
     -o-background-size: cover;
     -moz-background-size: cover;
-    -webkit-background-size: cover;
-
-
 }
 
 .sunset {
-    background-image: url("../images/sunset.jpg");
+    background: url("../images/sunset.jpg") fixed center no-repeat;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
 }
 
 .day {
     background: url("../images/day.jpg") fixed center no-repeat;
     background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
 }
 
 h1 {
     font-size: 20px;
-    color: white;
+}
+
+img {
+  width: 220px;
+  height: 220px;
+  margin-left: -110px;
+  bottom: 0%;
+  position: absolute;
+  left: 50%
 }
