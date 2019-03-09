@@ -1,10 +1,10 @@
 var date, h, m, s, count;
 
 function load(){
-    clock();
-    background();
+    clock();    
     zeroAdded();
-    riseFall();      
+    riseFall(); 
+    Animate(); 
 }    
   
 function clock(){
@@ -44,18 +44,22 @@ function zeroAdded(i) {
 //     }
 // };
 
-function riseFall() {
-    if (h > 17 && h < 20){
-        document.body.className = "sunfall";
+function Animate() {
+    // maakt een variabele aan met de id sun    
+    var sunAnimate = document.getElementById("sun");   
+   
+    // als tijd tussen die uren is dan wordt de zon verplaatst voor een duratie van het aantal seconden dat het nog duurt tot het 20:00 is
+    // als de tijd buiten die uren is dan wordt er een class toegevoegd waarmee de zon op display: none wordt gezet.
+    if (h >= 6 && h <20){
+        TweenMax.to(sunAnimate, (20 * 60 * 60) - ((h * 60 * 60) + (m * 60) + (s)), {bottom:'100%'});
+    } else {
+        var image = document.getElementById("sun");
+        image.classList.add("sun_remove");
     }
 }
 
 
 load();
-
-
-
-
 
 
 
