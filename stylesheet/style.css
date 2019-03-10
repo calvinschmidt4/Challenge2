@@ -29,7 +29,11 @@ main {
     left: 50%;
     bottom: 0%;
     
-  }
+}
+
+.sun_remove {
+    display: none;
+}
 
 .container {
     height: 100px;
@@ -80,6 +84,3 @@ h1 {
 }
 
 
-.sun_remove {
-    display: none;
-}
