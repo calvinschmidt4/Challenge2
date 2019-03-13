@@ -67,9 +67,32 @@ function Animate() {
     console.log(moveValue);
     // als tijd tussen onderstaande uren is dan wordt de zon verplaatst over de afstand van moveValue in percentages
     // als de tijd buiten die uren is dan wordt er een class toegevoegd waarmee de zon op display: none wordt gezet.
-    if (h >= 6 && h <20){
-        
-        TweenMax.to(sunAnimate, 1, {bottom: moveValue += '%'});
+   
+    // TweenLite.set("#sun", { 
+    //     xPercent: -50, 
+    //     yPercent: -50, 
+    //     x: -radius, 
+    //     y: -radius
+    //   });
+      
+    //   TweenMax.to("#sun", 1, {
+    //     y: radius,
+    //     ease: Sine.easeInOut,
+    //     repeat: -1,
+    //     yoyo: true
+    //   });
+      
+    //   TweenMax.to("#sun", 1, {
+    //     x: radius,
+    //     ease: Sine.easeInOut,
+    //     repeat: -1,
+    //     yoyo: true
+    //   }).progress(0.5);
+   
+   
+   
+    if (h >= 6 && h <20){        
+        TweenMax.to(sunAnimate, 1, {bottom: moveValue +='%', scale: 0.5, rotationY: 1080});
         if (h >= 6 && h <8){
             document.getElementById("tekst").innerHTML = 'Sunrise';
         } 
@@ -88,8 +111,6 @@ function Animate() {
         image.classList.add("sun_remove");
     }
 }
-
-
 
 load();
 
