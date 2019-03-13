@@ -1,6 +1,7 @@
 html {
     width: 100%;
     height: 100%;
+    overflow: hidden;
 }
 
 body {
@@ -13,6 +14,17 @@ body {
     color: white;   
 }
 
+header {
+    height: 10%;
+    background-color: black;
+    display: flex;
+}
+
+h1 {
+    font-size: 30px;    
+    margin: auto;
+}
+
 main {
     height: 90%;
     width: 100%;
@@ -22,12 +34,11 @@ main {
 }
 
 #sun {
-    width: 220px;
-    height: 220px;
-    margin-left: -110px;    
+    width: 110px;
+    height: 110px;
+    /* margin-left: -110px;    */
     position: absolute;
-    left: 50%;
-    bottom: 0%;
+    bottom: 0;
     
 }
 
@@ -50,16 +61,7 @@ main {
     margin: auto;    
 }
 
-header {
-    height: 10%;
-    background-color: black;
-    display: flex;
-}
 
-h1 {
-    font-size: 30px;    
-    margin: auto;
-}
 
 
 .night {
