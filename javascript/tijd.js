@@ -77,7 +77,6 @@ sunAnimate.onclick = function (){
     TweenMax.fromTo(sunAnimate, 2, {scale: 0.5}, {scale: 1});
 };
     
-
 clock();    
 zeroAdded();
 animate(); 
