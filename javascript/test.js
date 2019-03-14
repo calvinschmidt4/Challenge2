@@ -34,9 +34,9 @@ function Animate() {
     // maakt een variabele aan met de id sun    
     var sunAnimate = document.getElementById("sun");  
     // op basis van hoe laat het is wordt berekent hoeveel de zon zich moet verplaatsen 
-    var moveValueUp = (date.getHours() + (date.getMinutes() / 60) + (date.getSeconds() / 3600) - 6) * (100 / 7);
-    var moveValueDown = (date.getHours() + (date.getMinutes() / 60) + (date.getSeconds() / 3600) - 13) * (100 / 7);
-    var moveValueRight = (date.getHours() + (date.getMinutes() / 60) + (date.getSeconds() / 3600) - 6) * (100 / 14);
+    var moveValueUp = (date.getHours() + (date.getMinutes() / 60) + (date.getSeconds() / 3600) - 6) * (80 / 7);
+    var moveValueDown = (date.getHours() + (date.getMinutes() / 60) + (date.getSeconds() / 3600) - 13) * (80 / 7);
+    var moveValueRight = (date.getHours() + (date.getMinutes() / 60) + (date.getSeconds() / 3600) - 6) * (80 / 14);
     console.log(moveValueUp);
     // als tijd tussen onderstaande uren is dan wordt de zon verplaatst over de afstand van moveValue in percentages
     // als de tijd buiten die uren is dan wordt er een class toegevoegd waarmee de zon op display: none wordt gezet.
