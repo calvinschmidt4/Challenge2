@@ -26,19 +26,24 @@ h1 {
 }
 
 main {
-    height: 90%;
+    height: 80%;
     width: 100%;
     background-color: rgba(163, 241, 255);
     position: relative;
-    z-index: -1;
+}
+
+footer {
+    height: 10%;
+    position: relative;
 }
 
 #sun {
-    width: 110px;
-    height: 110px;
+    width: auto;
+    height: 10%;
     /* margin-left: -110px;    */
     position: absolute;
-    bottom: 0;
+    bottom: 0%;
+    right: 0%;
     
 }
 
@@ -47,18 +52,18 @@ main {
 }
 
 .container {
-    height: 100px;
-    bottom: 0;
-    position: absolute;
+    height: 100%;
     margin: auto;
     width: 100%;
     display: flex;
-    background-color: #834013;
-    border-top: 10px solid green;
+    /* background-color: #834013; */
+    background-color: green;
+    /* border-top: 10px solid green; */
+    
 }
 
 #clock {        
-    margin: auto;    
+    margin: auto;   
 }
 
 
