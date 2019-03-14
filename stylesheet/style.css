@@ -14,69 +14,90 @@ body {
     color: white;   
 }
 
-header {
-    height: 10%;
+/* header {
+    height: 60px;
     background-color: black;
     display: flex;
+} */
+
+
+/* h1 {
+    font-size: 30px;    
+    margin: auto;
+} */
+
+main {
+    /* height: 80%; */
+    height: 100%;
+    width: 100%;    
+    position: relative;
+    background-color: rgba(163, 241, 255);
+}
+
+.container_top {
+    height: 60px;
+    background-color: black;
+    display: flex;
+    z-index: 1;
 }
 
 h1 {
-    font-size: 30px;    
+    font-size: 45px;    
     margin: auto;
 }
 
-main {
-    height: 80%;
-    width: 100%;
-    background-color: rgba(163, 241, 255);
-    position: relative;
+.container_bottom {
+    position: absolute;
+    height: 60px;
+    margin: auto;
+    width: 100%;  
+    background-color: #834013;
+    bottom: 0;
+    border-top: 5px solid green;
+    z-index: 1;
+    
 }
 
-footer {
+.clock_wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+#clock { 
+    margin: auto;  
+    font-size: 45px;
+}
+
+.night {
+    background-color: black;
+}
+
+/* .footer {
     height: 10%;
     position: relative;
-}
+} */
 
 #sun {
-    width: auto;
-    height: 10%;
-    /* margin-left: -110px;    */
+    /* width: auto;
+    height: 10%; */  
+    /* margin-left: -60px;  */
+    /* margin-bottom: -60px;    */
+    bottom: 0;
+    width: 60px;
+    height: 60px;
     position: absolute;
-    bottom: 0%;
-    right: 0%;
-    
+    /* bottom: calc(10% - 60px);
+    left: calc(0% - 30px);
+     */
 }
 
 .sun_remove {
     display: none;
 }
 
-.container {
-    height: 100%;
-    margin: auto;
-    width: 100%;
-    display: flex;
-    /* background-color: #834013; */
-    background-color: green;
-    /* border-top: 10px solid green; */
-    
-}
 
-#clock {        
-    margin: auto;   
-}
-
-
-
-
-.night {
-    background: url("../images/night.jpg") fixed center no-repeat;
-    background-size: cover;
-    -o-background-size: cover;
-    -moz-background-size: cover;
-}
-
-.sunset {
+/* .sunset {
     background: url("../images/sunset.jpg") fixed center no-repeat;
     background-size: cover;
     -o-background-size: cover;
@@ -88,6 +109,72 @@ footer {
     background-size: cover;
     -o-background-size: cover;
     -moz-background-size: cover;
+} */
+
+
+@media only screen and (min-width: 599px) {
+    .container_top {
+        height: 80px;
+    }
+    h1 {
+        font-size: 50px;
+    }  
+    #clock {        
+        font-size: 50px;
+    }
+    #sun {
+        width: 80px;
+        height: 80px;  
+        /* bottom: calc(10% - 80px);
+        left: calc(0% - 40px);           */
+    }
+    .container_bottom {        
+        height: 80px;
+        border-top: 10px solid green;          
+    }
 }
 
+@media only screen and (min-width: 899px) {
+    .container_top {
+        height: 100px;
+    }
+    h1 {
+        font-size: 55px;
+    }
+    #clock {        
+        font-size: 55px; 
+    }
+    #sun {
+        width: 100px;
+        height: 100px;  
+        /* bottom: calc(10% - 100px);
+        left: calc(0% - 50px);           */
+    }
+    .container_bottom {        
+        height: 100px;  
+        border-top: 15px solid green;        
+    }
 
+}
+
+@media only screen and (min-width: 1199px) {
+    .container_top {
+        height: 120px;
+    }
+    h1 {
+        font-size: 60px;
+    }
+    #clock {        
+        font-size: 60px;
+    }
+    #sun {
+        width: 120px;
+        height: 120px;  
+        /* bottom: calc(10% - 120px);
+        left: calc(0% - 60px);           */
+    }
+    .container_bottom {        
+        height: 120px; 
+        border-top: 20px solid green;         
+    }
+}
