@@ -90,6 +90,8 @@ h1 {
     /* bottom: calc(10% - 60px);
     left: calc(0% - 30px);
      */
+     transform: translate(-30px, 60px); 
+     /* bovenstaande transform van 120px alleen toevoegen wanneer tussen 6:00 en 13:00. Tussen 13 en 20 moet het 60px zijn. */
 }
 
 .sun_remove {
