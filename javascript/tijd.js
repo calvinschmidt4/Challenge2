@@ -1,6 +1,5 @@
 var date, h, m, s, count;
 
-
 function clock(){
     date = new Date();
     // de huidige uren, minuten en secondes worden opgevraagd.
